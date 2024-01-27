@@ -1,0 +1,15 @@
+/Users/antontran/Desktop/DataStructures/DataStructuresCS/DataStructuresCS/bin/Debug/net8.0/DataStructuresCS
+/Users/antontran/Desktop/DataStructures/DataStructuresCS/DataStructuresCS/bin/Debug/net8.0/DataStructuresCS.deps.json
+/Users/antontran/Desktop/DataStructures/DataStructuresCS/DataStructuresCS/bin/Debug/net8.0/DataStructuresCS.runtimeconfig.json
+/Users/antontran/Desktop/DataStructures/DataStructuresCS/DataStructuresCS/bin/Debug/net8.0/DataStructuresCS.dll
+/Users/antontran/Desktop/DataStructures/DataStructuresCS/DataStructuresCS/bin/Debug/net8.0/DataStructuresCS.pdb
+/Users/antontran/Desktop/DataStructures/DataStructuresCS/DataStructuresCS/obj/Debug/net8.0/DataStructuresCS.GeneratedMSBuildEditorConfig.editorconfig
+/Users/antontran/Desktop/DataStructures/DataStructuresCS/DataStructuresCS/obj/Debug/net8.0/DataStructuresCS.AssemblyInfoInputs.cache
+/Users/antontran/Desktop/DataStructures/DataStructuresCS/DataStructuresCS/obj/Debug/net8.0/DataStructuresCS.AssemblyInfo.cs
+/Users/antontran/Desktop/DataStructures/DataStructuresCS/DataStructuresCS/obj/Debug/net8.0/DataStructuresCS.csproj.CoreCompileInputs.cache
+/Users/antontran/Desktop/DataStructures/DataStructuresCS/DataStructuresCS/obj/Debug/net8.0/DataStructuresCS.sourcelink.json
+/Users/antontran/Desktop/DataStructures/DataStructuresCS/DataStructuresCS/obj/Debug/net8.0/DataStructuresCS.dll
+/Users/antontran/Desktop/DataStructures/DataStructuresCS/DataStructuresCS/obj/Debug/net8.0/refint/DataStructuresCS.dll
+/Users/antontran/Desktop/DataStructures/DataStructuresCS/DataStructuresCS/obj/Debug/net8.0/DataStructuresCS.pdb
+/Users/antontran/Desktop/DataStructures/DataStructuresCS/DataStructuresCS/obj/Debug/net8.0/DataStructuresCS.genruntimeconfig.cache
+/Users/antontran/Desktop/DataStructures/DataStructuresCS/DataStructuresCS/obj/Debug/net8.0/ref/DataStructuresCS.dll
