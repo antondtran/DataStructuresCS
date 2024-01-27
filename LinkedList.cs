@@ -111,13 +111,14 @@ public class LinkedList{
             temp = head;
             head = null;
             tail = null;
-            length--;
+            length = 0;
             return temp;
             
         }
 
         temp = head;
         head = temp.next;
+        temp.next = null;
         length--;
         return temp;
         
@@ -140,6 +141,7 @@ public class LinkedList{
         if (length == 1){
             temp = head;
             head = null;
+            tail = null;
             length--;
             return temp;
 
@@ -156,6 +158,75 @@ public class LinkedList{
         return removeLast;
 
 
+    }
+
+    public Node Get(int index){
+        Node temp = head;
+
+        for (int i = 0; i < index; i++){
+            temp = temp.next;
+        }
+
+        return temp;
+    }
+
+    public bool Set(int index, int value){
+        Node temp = Get(index);
+
+        if (temp == null){
+            return false;
+        } else {
+            temp.value = value;
+        return true;
+
+        }
+
+    }
+
+    public Node Remove(int index){
+
+        Node pre = Get(index - 1);
+        Node toRemove = Get(index);
+        Node post = Get(index+1);
+
+        if (index < 0 || index >= length){
+            return null;
+        }
+
+        if (index == 0){
+            RemoveFirst();
+        } 
+        
+        if (index == length - 1){
+            RemoveLast();
+        } 
+
+        if (pre != null && post != null){
+            pre.next = post;
+        toRemove.next = null;
+        length--;
+        return toRemove;
+
+        }
+
+        return null;
+            
+        
+
+    
+            
+
+        
+        
+
+        
+
+
+
+
+
+
+        
     }
 
 

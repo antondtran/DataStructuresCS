@@ -2,5 +2,7 @@
 
 LinkedList linkedList = new LinkedList();
 linkedList.Append(1);
-linkedList.Prepend(2);
+linkedList.Append(2);
+linkedList.Append(5);
+linkedList.Remove(2);
 linkedList.PrintList();
