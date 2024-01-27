@@ -57,11 +57,15 @@ public class LinkedList{
             head = newNode;
             tail = newNode;
             length++;
-        }
+        } else {
 
-        tail.next = newNode;
+            tail.next = newNode;
         tail = newNode;
         length++;
+
+        }
+
+        
 
     }
 
