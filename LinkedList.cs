@@ -1,9 +1,9 @@
 public class LinkedList{
 
-    public Node head;
-    public Node tail;
+    private Node head;
+    private Node tail;
 
-    public int length;
+    private int length;
 
     public LinkedList(){
 
@@ -34,6 +34,19 @@ public class LinkedList{
         }
 
         
+    }
+
+    public Node GetHead(){
+        return head;
+    }
+
+
+    public Node GetTail(){
+        return tail;
+    }
+
+    public int GetLength(){
+        return length;
     }
 
     
