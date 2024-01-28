@@ -210,23 +210,50 @@ public class LinkedList{
         }
 
         return null;
+
+
+
+        
+    }
+
+    public void Reverse(){
+
+        Node temp = head;
+        head = tail;
+        tail = temp;
+
+        Node after = temp.next;
+        Node before = null;
+
+        for (int i = 0; i < length; i++){
+            after = temp.next;
+            temp.next = before;
+            before = temp;
+            temp = after;
             
-        
+        }
 
-    
+
+    }
+
+
+    public Node FindMiddleNode(){
+
+
+            Node slow = head;
+            Node fast = head;
+
+            while(fast != null && fast.next != null){
+                slow = slow.next;
+                fast = fast.next.next;
+            }
+
+
+            Console.WriteLine("Middle value is " + slow.value);
+
+            return slow;
+
             
-
-        
-        
-
-        
-
-
-
-
-
-
-        
     }
 
 

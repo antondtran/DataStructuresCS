@@ -4,5 +4,6 @@ LinkedList linkedList = new LinkedList();
 linkedList.Append(1);
 linkedList.Append(2);
 linkedList.Append(5);
-linkedList.Remove(2);
-linkedList.PrintList();
+linkedList.Append(6);
+
+linkedList.FindMiddleNode();
