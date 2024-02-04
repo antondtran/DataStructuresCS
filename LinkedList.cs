@@ -225,6 +225,7 @@ public class LinkedList{
         Node after = temp.next;
         Node before = null;
 
+
         for (int i = 0; i < length; i++){
             after = temp.next;
             temp.next = before;
@@ -256,6 +257,77 @@ public class LinkedList{
             
     }
 
+    public bool hasLoop(){
+	    
+	    Node slow = head;
+	    Node fast = head;
+	    
+	    while(fast != null && fast.next != null){
+	        slow = slow.next;
+	        fast = fast.next.next;
+	        
+	        if (fast == slow){
+	            return true;
+	        } 
+	    }
+	    
+	    return false;
+	    
+	}
+
+    public Node FindKthFromEnd(int element){
+        Node slow = head;
+        Node fast = head;
+
+        
+        for (int i = 0; i < element; i++){
+
+            if (fast == null){
+                return null;
+            }
+
+            fast = fast.next;
+        }
+
+        while (fast != null){
+            slow = slow.next;
+            fast = fast.next;
+        }
+
+
+        Console.WriteLine("The value is " + slow.value);
+        return slow;
+
+
+    }
+
+
+    public void PartitionList(int x){
+        if (head == null){
+            return;
+        }
+
+        Node dummy1 = new Node(0);
+        Node dummy2 = new Node(0);
+        Node prev1 = dummy1;
+        Node prev2 = dummy2;
+        Node current = head;
+
+        while (current != null){
+            if (current.value < x){
+                prev1.next = current;
+                prev1 = current;
+            } else {
+                prev2.next = current;
+                prev2 = current;
+            }
+            current = current.next;
+        }
+
+        prev2.next = null;
+        prev1.next = dummy2.next;
+        head = dummy1.next;
+    }
 
 
 }
